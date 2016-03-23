@@ -1,0 +1,12 @@
+Package: USAir
+Title: We have a lot more data waiting for you
+Version: 0.1
+Authors@R: 'Richard Iannone <riannone@me.com> [aut,cre]'
+Description: US EPA air monitoring data from 1990 to 2015.
+Depends:
+    R (>= 3.2.0)
+License: CC0
+LazyData: true
+Suggests:
+    dplyr
+URL: https://github.com/rich-iannone/USAir
