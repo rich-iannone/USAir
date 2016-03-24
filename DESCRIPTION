@@ -6,7 +6,7 @@ Description: US EPA air monitoring data from 1990 to 2015.
 Depends:
     R (>= 3.2.0)
 License: CC0
-LazyData: true
 Suggests:
     dplyr
 URL: https://github.com/rich-iannone/USAir
+RoxygenNote: 5.0.1
