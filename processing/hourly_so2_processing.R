@@ -1,4 +1,5 @@
 library(dplyr)
+library(magrittr)
 
 # Read in hourly SO2 files, change to `tbl_df`,
 # modify column names, save as .rdata file with
@@ -41,6 +42,6 @@ for (i in 1990:2015){
   so2_hourly$unit_meas <- "ppb"
   
   save(so2_hourly,
-       file = paste0("so2_hourly_", i, ".rdata"),
+       file = paste0("data/so2_hourly_", i, ".rdata"),
        compress = "bzip2")
 }

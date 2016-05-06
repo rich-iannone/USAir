@@ -1,4 +1,5 @@
 library(dplyr)
+library(magrittr)
 
 # Read in hourly ozone files, change to `tbl_df`,
 # modify column names, save as .rdata file with
@@ -40,7 +41,7 @@ for (i in 1990:2015){
   ozone_hourly$param <- "ozone"
   ozone_hourly$unit_meas <- "ppm"
   
-  save(processed,
-       file = paste0("ozone_hourly_", i, ".rdata"),
+  save(ozone_hourly,
+       file = paste0("data/ozone_hourly_", i, ".rdata"),
        compress = "bzip2")
 }
