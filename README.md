@@ -4,12 +4,12 @@ This package contains data files for criteria gases, particulates, and air toxic
 
 The data consists of:
 - CO
-- NO2
-- SO2
+- NO<sub>2</sub>
+- SO<sub>2</sub>
 - ozone
-- PM10
-- PM2.5 (with FRM or FEM instruments)
-- PM2.5 (with non-FRM or non-FEM instruments)
+- PM<sub>10</sub>
+- PM<sub>2.5</sub> (with FRM or FEM instruments)
+- PM<sub>2.5</sub> (with non-FRM or non-FEM instruments)
 - meteorological parameters (e.g., wind speed, wind direction, RH, P, etc.)
 
 ## Installation
