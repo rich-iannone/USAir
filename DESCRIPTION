@@ -1,12 +1,12 @@
 Package: USAir
-Title: We have a lot more data waiting for you
+Title: US EPA air monitoring data 1990-2015
 Version: 0.1
 Authors@R: 'Richard Iannone <riannone@me.com> [aut,cre]'
 Description: US EPA air monitoring data from 1990 to 2015.
 Depends:
     R (>= 3.2.0)
 License: CC0
-Suggests:
-    dplyr
+Imports:
+    dplyr (>= 0.4.3)
 URL: https://github.com/rich-iannone/USAir
 RoxygenNote: 5.0.1
