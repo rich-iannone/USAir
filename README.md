@@ -5,7 +5,7 @@ This package contains data files for criteria gases and particulates, and meteor
 The data consists of:
 - CO [`co_hourly_`] (1990-2015)
 - NO<sub>2</sub> [`no2_hourly_`] (1990-2015)
-- SO<sub>2</sub> [`so2_hourly_`]
+- SO<sub>2</sub> [`so2_hourly_`] (1990-2015)
 - ozone [`ozone_hourly_`] (1990-2015)
 - PM<sub>10</sub> [`pm10_hourly_`] (1990-2015)
 - PM<sub>2.5</sub> (with FRM or FEM instruments) [`pm25_frm_fem_hourly_`] (2008-2015)
