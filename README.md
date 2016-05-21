@@ -12,7 +12,7 @@ The data consists of:
 - PM<sub>2.5</sub> (with non-FRM or non-FEM instruments) [`pm25_non_frm_fem_hourly_`]
 - meteorological parameters (e.g., wind speed, wind direction, RH, P, etc.) [`met_hourly_`]
 
-The CO data file for 2000 be accessed using the following:
+CO data for 2000 be accessed using the following:
 
 ```r
 data("co_hourly_2000")
