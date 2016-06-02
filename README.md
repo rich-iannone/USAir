@@ -3,14 +3,14 @@
 This **R** package contains data files for criteria gases and particulates, and meteorology on an hourly basis from 1990–2015 from thousands of monitoring stations in the United States.
 
 The data consists of:
-- CO [`co_hourly_`]
-- NO<sub>2</sub> [`no2_hourly_`]
-- SO<sub>2</sub> [`so2_hourly_`]
-- ozone [`ozone_hourly_`]
-- PM<sub>10</sub> [`pm10_hourly_`]
-- PM<sub>2.5</sub> (with FRM or FEM instruments) [`pm25_frm_fem_hourly_`] (2008 - 2015)
-- PM<sub>2.5</sub> (with non-FRM or non-FEM instruments) [`pm25_non_frm_fem_hourly_`] (1998 - 2015)
-- meteorological parameters (e.g., wind speed, wind direction, RH, P, etc.) [`met_hourly_`]
+- CO (`co_hourly_`)
+- NO<sub>2</sub> (`no2_hourly_`)
+- SO<sub>2</sub> (`so2_hourly_`)
+- ozone (`ozone_hourly_`)
+- PM<sub>10</sub> (`pm10_hourly_`)
+- PM<sub>2.5</sub> (with FRM or FEM instruments) (`pm25_frm_fem_hourly_`, from 2008 - 2015)
+- PM<sub>2.5</sub> (with non-FRM or non-FEM instruments) (`pm25_non_frm_fem_hourly_`, from 1998 - 2015)
+- meteorological parameters (e.g., wind speed, wind direction, RH, P, etc.) (`met_hourly_`)
 
 CO (carbon monoxide) data for 2000 be accessed using the following:
 
