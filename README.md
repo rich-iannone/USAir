@@ -1,6 +1,6 @@
 <img src="inst/img/USAir.png">
 
-This package contains data files for criteria gases and particulates, and meteorology on an hourly basis from 1990–2015 from thousands of monitoring stations in the United States.
+This **R** package contains data files for criteria gases and particulates, and meteorology on an hourly basis from 1990–2015 from thousands of monitoring stations in the United States.
 
 The data consists of:
 - CO [`co_hourly_`]
@@ -43,8 +43,6 @@ co_hourly_2000
 ```
 
 ## Installation
-
-**USAir** is best used in an **R** environment. If you don't have an **R** installation, it can be obtained from the [**Comprehensive R Archive Network (CRAN)**](http://cran.rstudio.com). If you need an IDE, [**RStudio**](http://www.rstudio.com/products/RStudio/) is recommended.
 
 You can install the development version of **USAir** from **GitHub** using the **devtools** package.
 
