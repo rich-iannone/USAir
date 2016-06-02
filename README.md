@@ -8,20 +8,21 @@ The data consists of:
 - SO<sub>2</sub> [`so2_hourly_`]
 - ozone [`ozone_hourly_`]
 - PM<sub>10</sub> [`pm10_hourly_`]
-- PM<sub>2.5</sub> (with FRM or FEM instruments) [`pm25_frm_fem_hourly_`]
-- PM<sub>2.5</sub> (with non-FRM or non-FEM instruments) [`pm25_non_frm_fem_hourly_`]
+- PM<sub>2.5</sub> (with FRM or FEM instruments) [`pm25_frm_fem_hourly_`] (2008 - 2015)
+- PM<sub>2.5</sub> (with non-FRM or non-FEM instruments) [`pm25_non_frm_fem_hourly_`] (1998 - 2015)
 - meteorological parameters (e.g., wind speed, wind direction, RH, P, etc.) [`met_hourly_`]
 
-CO data for 2000 be accessed using the following:
+CO (carbon monoxide) data for 2000 be accessed using the following:
 
 ```r
 data("co_hourly_2000")
 ```
 
-This results in the `co_hourly` `tbl_df` loaded into the workspace.
+This results in the `co_hourly_2000` `tbl_df` loaded into the workspace. To display part of this, simply provide the name of the object (`co_hourly_2000`).
 
 ```r
-co_hourly
+co_hourly_2000
+#> Source: local data frame [4,109,166 x 24]
 
 #>      state    county  site      lat       lon param date_local time_local value unit_meas
 #>      (chr)     (chr) (int)    (dbl)     (dbl) (chr)      (chr)      (chr) (dbl)     (chr)
@@ -43,7 +44,7 @@ co_hourly
 
 ## Installation
 
-**USAir** is used in an **R** environment. If you don't have an **R** installation, it can be obtained from the [**Comprehensive R Archive Network (CRAN)**](http://cran.rstudio.com). If you need an IDE, [**RStudio**](http://www.rstudio.com/products/RStudio/) is recommended.
+**USAir** is best used in an **R** environment. If you don't have an **R** installation, it can be obtained from the [**Comprehensive R Archive Network (CRAN)**](http://cran.rstudio.com). If you need an IDE, [**RStudio**](http://www.rstudio.com/products/RStudio/) is recommended.
 
 You can install the development version of **USAir** from **GitHub** using the **devtools** package.
 
