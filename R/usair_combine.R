@@ -28,9 +28,10 @@
 usair_combine <- function(usair_dataset,
                           years) {
   
-  if (!(usair_dataset %in% c("co", "no2", "so2", "ozone",
-                           "pm10", "pm25_frm", "pm25_nfrm",
-                           "met"))){
+  if (!(usair_dataset %in% 
+        c("co", "no2", "so2", "ozone",
+          "pm10", "pm25_frm", "pm25_nfrm",
+          "met"))){
     stop("The specified dataset does not exist.")
   }
   
@@ -63,15 +64,28 @@ usair_combine <- function(usair_dataset,
       stop("The selected years do not have data.")
     }
   }
-  
+  years_expanded
   for (i in 1:length(file_locations)) {
     if (i == 1) {
       load(file_locations[i])
-      assign("data", value = get(dataset_object_name))
+      assign(
+        "data", 
+        value = get(paste0(
+          dataset_object_name, 
+          "_", 
+          gsub(".*_([0-9][0-9][0-9][0-9]).rdata$", 
+               "\\1", file_locations[i]))))
     }
     if (i > 1) {
       load(file_locations[i])
-      assign(paste0("data_2"), value = get(dataset_object_name))
+      assign(
+        paste0("data_2"), 
+        value = get(paste0(
+          dataset_object_name, 
+          "_", 
+          gsub(".*_([0-9][0-9][0-9][0-9]).rdata$", 
+               "\\1", file_locations[i]))))
+      
       data <- bind_rows(data, data_2)
     }
     if (i == length(file_locations)) {
