@@ -22,6 +22,16 @@
 #' dataset.
 #' @return a dplyr \code{tb_df} data frame with 
 #' combined data for multiple years.
+#' @examples
+#' \dontrun{
+#' # Get carbon monoxide (CO) data for the years 1992,
+#' # 1993, and 1994 in a single data frame
+#' co_1992_1994 <- usair_combine("co", c(1992, 1994))
+#'
+#' # Get a count of records for this dataset
+#' nrow(co_1992_1994)
+#' #> [1] 12584901
+#' }
 #' @import dplyr
 #' @export usair_combine
 
