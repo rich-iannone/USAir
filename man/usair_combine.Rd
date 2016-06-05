@@ -36,4 +36,15 @@ edges are outward edges to those nodes. This creates
 a selection of nodes. An optional filter by node
 attribute can limit the set of nodes traversed to.
 }
+\examples{
+\dontrun{
+# Get carbon monoxide (CO) data for the years 1992,
+# 1993, and 1994 in a single data frame
+co_1992_1994 <- usair_combine("co", c(1992, 1994))
+
+# Get a count of records for this dataset
+nrow(co_1992_1994)
+#> [1] 12584901
+}
+}
 
