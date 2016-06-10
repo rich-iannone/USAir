@@ -42,6 +42,17 @@ co_hourly_2000
 #>   method_code (int), state_code (int), county_code (int), date_last_chg (chr)
 ```
 
+If that's not enough data you can use the included `usair_combine()` function to combine multiple years of data. For example, to get carbon monoxide (CO) data for all the years from 1990 to 2000 into a single object:
+```r
+co_1990_2000 <- usair_combine("co", c(1990, 2000))
+```
+
+Getting a count of rows for this object yields 45,654,962 records.
+```r
+co_1990_2000 %>% nrow
+#> [1] 45654962
+```
+
 ## Installation
 
 You can install the development version of **USAir** from **GitHub** using the **devtools** package.
