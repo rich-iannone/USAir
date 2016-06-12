@@ -47,9 +47,9 @@ If that's not enough data you can use the included `usair_combine()` function to
 co_1990_2000 <- usair_combine("co", c(1990, 2000))
 ```
 
-Getting a count of rows for this object yields 45,654,962 records.
+Getting a count of rows for this object yields 45,654,962 records:
 ```r
-co_1990_2000 %>% nrow
+nrow(co_1990_2000)
 #> [1] 45654962
 ```
 
